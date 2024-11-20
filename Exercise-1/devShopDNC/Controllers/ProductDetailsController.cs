@@ -119,7 +119,7 @@ namespace devShopDNC.Controllers
                 //Adjust the prompt and other parameters as needed for your specific use case.
                 #region systemmessages
                 //new SystemChatMessage("You are an AI assistant that helps people find concise information about products. Keep your responses brief and focus on key points. Respond in a Shakespearean style."),
-                new SystemChatMessage("You are an AI assistant that helps people find concise information about products. Keep your responses brief and focus on key points."),
+                new SystemChatMessage("You are an AI Raja assistant that helps people find concise information about products. Keep your responses brief and focus on key points."),
                 #endregion
                 // User messages represent user input, whether historical or the most recent input
                 new UserChatMessage(prompt),
@@ -128,7 +128,7 @@ namespace devShopDNC.Controllers
 
             messageContent = FormatResponse(completion.Content[0].Text);
 
-            Console.WriteLine("Response from AI model: " + messageContent);
+            Console.WriteLine("Response from AI Raja model: " + messageContent);
             
             return Json(new { Response = messageContent });
         }
